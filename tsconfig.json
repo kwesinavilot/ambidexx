@@ -3,8 +3,14 @@
     "lib": ["esnext", "dom", "DOM.Iterable"],
     "target": "esnext",
     "esModuleInterop": true,
-    "noEmit": true
+    "noEmit": true,
+    "jsx": "react",
+    // "rootDir": "./src",
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "allowImportingTsExtensions": true
   },
   "include": ["./src/**/*"],
-  "extends": "@devvit/public-api/devvit.tsconfig.json"
+  "extends": "@devvit/public-api/devvit.tsconfig.json",
+  "exclude": ["node_modules"]
 }
